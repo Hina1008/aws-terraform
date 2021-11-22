@@ -1,0 +1,10 @@
+version: "3"
+services:
+  aws-terraform:
+    build:
+      context: .
+      dockerfile: ubuntu.dockerfile
+    volumes:
+      - ../:/home/vscode/aws-terraform
+    working_dir: /home/vscode/aws-terraform
+    tty: true
