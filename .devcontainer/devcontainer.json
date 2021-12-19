@@ -23,7 +23,8 @@
 		"yzhang.markdown-all-in-one",
 		"4ops.terraform",
 		"hashicorp.terraform",
-		"amazonwebservices.aws-toolkit-vscode"
+		"amazonwebservices.aws-toolkit-vscode",
+		"mark-tucker.aws-cli-configure"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
@@ -37,6 +38,7 @@
 	"features": {
 		"terraform": "latest",
 		"git": "latest",
-		"homebrew": "latest"
+		// "python": "3.8",
+		// "homebrew": "latest"
 	}
 }
