@@ -31,4 +31,6 @@ RUN sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install
     echo 'export PATH="${BREW}/.linuxbrew/bin:$PATH"' >> /home/vscode/.bash_profile && \
     . /home/vscode/.bash_profile && \
     brew doctor && \
+    brew install python@3.8 && \
+    echo 'export PATH="${BREW}/.linuxbrew/opt/python@3.8/bin:$PATH"' >> /home/vscode/.bash_profile && \
     brew install awscli
