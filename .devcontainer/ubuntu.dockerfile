@@ -33,4 +33,6 @@ RUN sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install
     brew doctor && \
     brew install python@3.8 && \
     echo 'export PATH="${BREW}/.linuxbrew/opt/python@3.8/bin:$PATH"' >> /home/vscode/.bash_profile && \
-    brew install awscli
+    brew install awscli && \
+    . /home/vscode/.bash_profile && \
+    pip3 install aws-mfa
