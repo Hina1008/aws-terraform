@@ -6,5 +6,6 @@ services:
       dockerfile: ubuntu.dockerfile
     volumes:
       - ../:/home/vscode/aws-terraform
+      - $HOME/.aws:/home/vscode/.aws
     working_dir: /home/vscode/aws-terraform
     tty: true

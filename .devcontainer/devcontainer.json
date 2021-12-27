@@ -5,12 +5,6 @@
 	"dockerComposeFile": "./docker-compose.yml",
     "service": "aws-terraform",
     "workspaceFolder": "/home/vscode/aws-terraform",
-	// "build": {
-	// 	"dockerfile": "Dockerfile",
-	// 	// Update 'VARIANT' to pick an Ubuntu version: hirsute, focal, bionic
-	// 	// Use hirsute or bionic on local arm64/Apple Silicon.
-	// 	"args": { "VARIANT": "focal" }
-	// },
 
 	// Set *default* container specific settings.json values on container create.
 	"settings": {},
@@ -23,7 +17,8 @@
 		"yzhang.markdown-all-in-one",
 		"4ops.terraform",
 		"hashicorp.terraform",
-		"amazonwebservices.aws-toolkit-vscode"
+		"amazonwebservices.aws-toolkit-vscode",
+		"mark-tucker.aws-cli-configure"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
@@ -36,7 +31,6 @@
 	"remoteUser": "vscode",
 	"features": {
 		"terraform": "latest",
-		"git": "latest",
-		"homebrew": "latest"
+		"git": "latest"
 	}
 }
